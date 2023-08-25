@@ -1,0 +1,91 @@
+# Compiler with which base packages will be installed.
+# NOTE: System compilers are unreliable for newer versions of some
+# compilers, such as gcc-4.8.5 and gcc-10.X. We recommend a newer compiler.
+# If left empty, SPACK_CM_BASE_COMPILER will default to the system compiler.
+SPACK_CM_BASE_COMPILER:
+- ''
+# USER WARNING: This list should not be modified unless by an advanced user.
+# Basic, common dependencies which will be built only once.
+SPACK_CM_BASE_PACKAGES:
+- autoconf
+- automake
+- bzip2
+- curl
+- diffutils
+- expat
+- gdbm
+- gettext
+- gmp
+- isl
+- libbsd
+- libiconv
+- libidn2
+- libpciaccess
+- libsigsegv
+- libtool
+- libunistring
+- libxml2
+- m4
+- mpc
+- mpfr
+- ncurses
+- numactl
+- openssl
+- pcre2
+- perl
+- pkgconf
+- readline
+- tar
+- util-macros
+- xz
+- zlib
+- zstd
+# Compilers to be installed.
+SPACK_CM_COMPILERS:
+- gcc@7.3.0
+- gcc@10.1.0
+# Compilers NOT to be installed, but against which TPLs should be built.
+# (e.g., externally installed compilers)
+SPACK_CM_EXTERNAL_COMPILERS:
+- ''
+# Compiler with which utilities will be built.
+# NOTE: System compilers are notoriously unreliable for newer versions of some
+# utilities, such as CMake. We recommend a newer compiler.
+# If left empty, SPACK_CM_UTILITY_COMPILER will default to the system compiler.
+SPACK_CM_UTILITY_COMPILER:
+- gcc@7.3.0
+# Utilities to be installed.
+SPACK_CM_UTILITIES:
+- cmake
+- git
+- ninja
+- vvtest
+# MPIs to be installed.
+SPACK_CM_MPIS:
+- openmpi@4.0.5
+# MPIs NOT to be installed, but against which TPLs should be built.
+# (e.g., externally installed MPIs)
+SPACK_CM_EXTERNAL_MPIS:
+- ''
+# Cudas to be installed.
+SPACK_CM_CUDAS:
+- ''
+# Cudas NOT to be installed, but against which TPLs should be built.
+# (e.g., externally installed cudas)
+SPACK_CM_EXTERNAL_CUDAS:
+- ''
+# TPLs to be installed.
+SPACK_CM_TPLS:
+- hdf5@1.10.6
+- boost
+- cgns@3.4.0
+- metis@5.1.0
+- parallel-netcdf@1.9.0
+- parmetis@4.0.3
+- valgrind@3.15.0
+- zlib@1.2.11
+- superlu-dist@5.4.0
+- superlu@4.3
+# Exclude these combinations of TPLs/compilers
+SPACK_CM_EXCLUDE_COMBOS:
+- ''

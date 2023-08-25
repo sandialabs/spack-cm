@@ -1,0 +1,17 @@
+# Module File Init Scripts
+
+This directory stores all of the `init` scripts for
+module files to load appropriately for your `project` and `platform`.
+
+When you run the `spack-cm install` step, as part of this, a
+basic `projectname-modules-machinename-init.sh` script will be generated
+and placed in this directory.
+
+These scripts can be used as-is, in their current location by running:
+
+```
+$ source $spack-cm_root/src/project/projectname/module-init-scripts/projectname-modules-machinename-init.sh
+```
+
+These scripts can also be modified, copied, or added to default profile
+settings.

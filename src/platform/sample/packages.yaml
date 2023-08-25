@@ -1,0 +1,4 @@
+# This file is intended to be customized.
+packages:
+  all:
+    target: [x86_64]

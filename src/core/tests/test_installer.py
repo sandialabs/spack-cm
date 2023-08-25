@@ -1,0 +1,3 @@
+"""
+Test installer.py
+"""

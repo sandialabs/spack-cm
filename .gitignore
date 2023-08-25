@@ -1,0 +1,10 @@
+__pycache__
+*.log
+*.egg-info
+*.pyc
+.spack-env/
+*spack.yaml
+*spack.lock
+*~
+*.out
+*-spack.yaml
